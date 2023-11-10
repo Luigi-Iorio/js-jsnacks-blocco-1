@@ -8,6 +8,8 @@ let somma = 0;
 for (let i = 0; i < 10; i++) {
   // richiesta numero all'utente per 10 volte
   numero = parseFloat(prompt("inserisci un numero"));
+  // stampa in console dei numeri inseriti
+  console.log(`Il ${i + 1}ˆ numero inserito è ${numero}`);
   // calcolo somma
   somma += numero;
 }
