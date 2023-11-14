@@ -4,16 +4,12 @@
 // Continua a chiedere i numeri all’utente e a inserirli nell’array fino a quando la somma degli elementi è inferiore di 50.
 
 // creazione array vuoto
-let numeri = [];
-
+const numeri = [];
 let somma = 0;
 
-let i = 0;
-
 do {
-  let daInserire = +prompt("Inserisci un numero");
-  numeri.push(daInserire[i]);
-  somma += numeri[i];
-  console.log(somma);
+  let daInserire = parseFloat(prompt("Inserisci un numero"));
+  numeri.push(daInserire);
+  somma += numeri;
+  console.log(`La somma è ${somma}`);
 } while (somma < 50);
-console.log("la somma è maggiore / uguale a 50");
