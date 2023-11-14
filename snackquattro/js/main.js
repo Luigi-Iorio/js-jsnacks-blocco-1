@@ -10,6 +10,6 @@ let somma = 0;
 do {
   let daInserire = parseFloat(prompt("Inserisci un numero"));
   numeri.push(daInserire);
-  somma += numeri;
+  somma += daInserire;
   console.log(`La somma è ${somma}`);
 } while (somma < 50);
